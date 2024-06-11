@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POODAAA</title>
+    <link rel="stylesheet" href="style_PODA.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-back"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
+            </svg>
+        </a>
+        <h1>阿偉小棧</h1>
+
+        <div class="svg-container">
+            <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-person-fill"
+                    viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="bg">
+        <div class="container">
+            <div class="main-content">
+                <!-- 自我介紹 -->
+                <div class="profile-container">
+                    <div class="cover-photo">
+                        <img src="img2/SNOWPADA.jpg" alt="封面照片">
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-pic">
+                            <a href="PODA.html">
+                                <img src="img2/pADA.png" alt="頭像"></a>
+                        </div>
+                        <div class="profile-details">
+                            <h1>POODAAAAAAAAA（王立薰）</h1>
+                            <p>志維不要當我</p>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <!-- GPT貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <h2>程式可能不會，但我現在是GPT大師</h2>
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言 2
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+                        <div class="comment">
+                            <a href="Emma.html">
+                                <img src="img2/ema.jpg" alt="User Avatar">
+                            </a>
+                            <div class="comment-content">
+                                <span>Emma Chen</span>
+                                <p>這我</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img src="img2/阿鮪2.png" alt="User Avatar">
+                            <div class="comment-content">
+                                <span>黑化阿鮪</span>
+                                <p>樓上不要再這我了</p>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 你媽貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                            <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <p>欸馬叫我不要再貼複製文 <br>我：知道了 </p>
+
+                    <img src="img2/複製文code.png" alt="Sample Image">
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言 1
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+                        <div class="comment">
+                            <a href="Emma.html">
+                                <img src="img2/ema.jpg" alt="User Avatar">
+                            </a>
+                            <div class="comment-content">
+                                <span>Emma Chen</span>
+                                <p>你媽</p>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 複製文貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <p>不讀這個逼學了！我去50嵐打工（訂單提示音）（拿起杯子）（貼標籤）（加入200cc熱紅茶湯）（加入50g奶精）（加入30cc果糖）（搖勻）（裝入珍珠）（倒入已經搖勻的奶茶）（哐啷哐啷加冰塊）（瀟灑地放進機器里上下搖擺）（抽空思考下一杯的步驟）（拿出搖好的茶）（倒進雪克杯）（開蓋）（抖進適量冰塊）（撇去浮沫）（密封）（抹布擦乾淨杯身）（大聲喊叫）（608號在嗎608號在嗎）
+                    </p>
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言 1
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+                        <div class="comment">
+                            <a href="Emma.html">
+                                <img src="img2/ema.jpg" alt="User Avatar">
+                            </a>
+                            <div class="comment-content">
+                                <span>Emma Chen</span>
+                                <p>這我</p>
+                            </div>
+                        </div>
+
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 蛤貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                            <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <h3>蛤</h3>
+
+                    <img src="img2/WEB.jpg" alt="Sample Image">
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言 1
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+                        <div class="comment">
+                            <a href="Emma.html">
+                                <img src="img2/ema.jpg" alt="User Avatar">
+                            </a>
+                            <div class="comment-content">
+                                <span>Emma Chen</span>
+                                <p>這我</p>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 畢志貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <h2>問，畢製找哪個老師最推</h2>
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言 4
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+                        <div class="comment">
+                            <img src="img2/阿鮪.png" alt="User Avatar">
+                            <div class="comment-content">
+                                <span>阿鮪</span>
+                                <p>至為</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img src="img2/阿尾.jpg" alt="User Avatar">
+                            <div class="comment-content">
+                                <span>阿尾</span>
+                                <p>志維超有料</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <img src="img2/阿煒.png" alt="User Avatar">
+                            <div class="comment-content">
+                                <span>阿煒</span>
+                                <p>志維</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <a href="Emma.html">
+                                <img src="img2/ema.jpg" alt="User Avatar">
+                            </a>
+                            <div class="comment-content">
+                                <span>Emma Chen</span>
+                                <p>你說的對，但是《Web/App 前端設計》是由志維老師研發的一堂全新課程。 課程背景發生在一個被稱作「雲林科技大學」的幻想學校，在這裡，被神選中的人將被授予「Visual Studio Code」，導引HTML跟CSS之力。 你將扮演一位名為「王立薰」的神秘角色自由的在學期中邂逅沒什麼幫到忙還一直提超瞎主意的視傳系怪人，學習向Chat GPT大神求助，想盡辦法避免被當掉——同時，逐步發掘「網頁設計」的真相。</p>
+                            </div>
+                        </div>
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 黑化貼文 -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="img2/pADA.png" alt="User Avatar">
+                        <span>POODAAAAAAAAA</span>
+                    </div>
+                    <p>地圖顯示營業到了才發現鐵門拉下來，我要黑化了</p>
+                    <img src="img2/50嵐.jpg" alt="Sample Image">
+
+                    <div class="interaction-bar">
+                        <button type="button" class="btn btn-dark like-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            愛心
+                            <span class="count" style="display: none;">0</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark" onclick="toggleComments(this)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                            </svg>
+                            留言
+                        </button>
+                    </div>
+
+                    <div class="comments" style="display: none;">
+
+                        <div class="reply">
+                            <textarea placeholder="留言……"></textarea>
+                            <button type="button" class="btn btn-primary">回覆</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右邊那塊 -->
+                <div class="sidebar">
+                    <div class="recommended-users">
+                        <h3>你可能認識...</h3>
+                        <ul>
+                            <li>
+                                <img src="img2/阿煒.png" alt="阿煒">
+                                <span>阿煒</span>
+                                <button type="button" class="btn btn-primary" onclick="toggleFollow(this)">追蹤</button>
+                            </li>
+                            <li>
+                                <img src="img2/阿鮪.png" alt="阿鮪">
+                                <span>阿鮪</span>
+                                <button type="button" class="btn btn-primary" onclick="toggleFollow(this)">追蹤</button>
+                            </li>
+                            <li>
+                                <img src="img2/阿尾.jpg" alt="User 3">
+                                <span>阿尾</span>
+                                <button type="button" class="btn btn-primary" onclick="toggleFollow(this)">追蹤</button>
+                            </li>
+                            <li>
+                                <img src="img2/阿鮪2P.png" alt="User 4">
+                                <span>黑化阿鮪</span>
+                                <button type="button" class="btn btn-primary" onclick="toggleFollow(this)">追蹤</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sponsor">
+                        <h3>你可能會喜歡...</h3>
+                        <img src="img2/duoligo.jpg" alt="Sponsor Image">
+                    </div>
+                </div>
+
+                <div class="center-content m-5">
+                    <h3>
+                        <a href="" class="no-underline">
+                            點擊載入更多貼文...
+                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z" />
+                            <path
+                                d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466" />
+                        </svg>
+                    </h3>
+                </div>
+
+                <br>
+
+            </div>
+        </div>
+
+        <script>
+            // 獲取所有按鈕
+            var likeButtons = document.querySelectorAll('.like-button');
+
+            // 為每個按鈕添加點擊事件
+            likeButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var countElement = button.querySelector('.count');
+                    var count = parseInt(countElement.textContent);
+                    count++;
+                    countElement.textContent = count;
+
+                    if (count === 1) {
+                        countElement.style.display = 'inline'; // 顯示數字
+                    }
+                });
+            });
+
+            //留言收折
+            function toggleComments(button) {
+                var commentsSection = button.parentElement.nextElementSibling;
+                var replySection = commentsSection.querySelector('.reply');
+
+                if (commentsSection.style.display === 'none' || commentsSection.style.display === '') {
+                    commentsSection.style.display = 'block';
+                    replySection.style.display = 'block';
+                } else {
+                    commentsSection.style.display = 'none';
+                    replySection.style.display = 'none';
+                }
+            }
+
+            //追蹤鍵
+            function toggleFollow(button) {
+                if (button.innerText === '追蹤') {
+                    button.innerText = '已追';
+                    button.style.backgroundColor = 'gray';
+                } else {
+                    button.innerText = '追蹤';
+                    button.style.backgroundColor = '';
+                }
+            }
+        </script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

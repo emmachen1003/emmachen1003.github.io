@@ -1,0 +1,254 @@
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #343434;
+    /* 深藍色背景 */
+}
+
+.header {
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header img {
+    width: 100px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.svg-container {
+    margin-left: auto; /* 將 SVG 靠右對齊 */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.bg {
+    background-color: #343434;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    /* 确保内容不会被页眉遮挡 */
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-right: 320px;
+    /* 调整主内容区域的宽度以容纳固定的 sidebar */
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    /* 确保 sidebar 不会遮挡页眉 */
+    right: 0;
+    height: calc(100% - 70px);
+    width: 300px;
+    background-color: #1a1a1a;
+    border-left: 1px solid #333;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.post {
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.recommended-users,
+.sponsor {
+    margin-bottom: 20px;
+}
+
+.recommended-users h3,
+.sponsor h3 {
+    margin-top: 0;
+}
+
+.recommended-users ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommended-users li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.recommended-users li:last-child {
+    border-bottom: none;
+}
+
+.recommended-users img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sponsor img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comments .comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comments .comment img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.comments .comment-content {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.comments .comment-content span {
+    display: block;
+    font-weight: bold;
+}
+
+.comments .comment-content p {
+    margin: 5px 0 0 0;
+}
+
+.show-more {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+.reply {
+    display: none;
+}
+
+.reply .comment {
+    margin-top: 10px;
+}
+
+.reply textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+}
+
+.reply button {
+    margin-top: 10px;
+}
+
+.interaction-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+        border-left: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 10px;
+    }
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* 文本居中 */
+}
+
+.no-underline {
+    color: white; /* 设置文字颜色为白色 */
+    text-decoration: none; /* 移除下划线 */
+}
+
+.no-underline:hover {
+    color: lightgray; /* 设置悬停时的文字颜色 */
+}
